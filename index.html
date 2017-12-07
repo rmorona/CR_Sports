@@ -97,7 +97,7 @@
           <tr><td><br></td></tr>
           <tr>
             <td>
-              <a href='#literature'><font size="5">Literature Review/Releted Work</font></a>
+              <a href='#literature'><font size="5">Literature Review/Related Work</font></a>
             </td>
           </tr>
           <tr><td><br></td></tr>
@@ -216,7 +216,23 @@
         our strategy that we faced.
       </p><br>
       <p style="font-size:140%"><b><u> Scraping the data </u></b></p>
-      <p style="font-size:140%"> TO DO
+      <p style="font-size:140%">
+        We began our project by exploring the website with the play-by-play data, which
+        was initially of type string. Our first instinct was to scrape the website, access
+        the data within the main table, and populate our dataframe with columns that
+        uniquely represented each possible event in the game. For example, we initially
+        had columns for the offensive rebound, defensive rebounds, foul type, and so on.
+        As we brainstormed more, we realized that we should structure our dataframe so that
+        each row represented the context of the game, rather than just recording each event.
+        For example, instead of having one column devoted to away timeouts that would only
+        change in value for the one second that the away team called a timeout, we created
+        a column to record how many time outs the away team had remaining at that point in
+        the game. Similarly we created columns for recording home and away shooting
+        percentages, point streaks, and much more. These columns proved to be more useful
+        for training and evaluating a model. In the end, we added the dependent column,
+        which placed 1 for the rows where the away team won the game and 0 for those rows
+        that the home team won the game. Below is the full list of predictors we created
+        in our dataframe:
       </p><br>
       <p style="font-size:100%">
         <table id="customers">
