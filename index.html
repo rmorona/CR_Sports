@@ -142,9 +142,41 @@
   <div style="margin-right:45px;">
   <div class="row">
       <h2>Literature Review/Releted Work</h2><br>
-      <p style="font-size:140%"> Web scraping, EDA, Win Probability Model, and further model. Summarize changes in project
-        goals.
-      </h4><br>
+      <p style="font-size:140%">
+        Below is a list of resources that we consulted for inspiration and had
+        great impact on the way we structured the sports project.
+
+        Using Random Forest to Estimate Win Probability Before Each Play of An
+        NFL Game by Dennis Lock and Dan Nettleton: the paper shaped the way that
+        we built the dataframe on our jupyter notebook and the model that we used
+        to create the Win Probability, despite being applied to the National
+        Football League. As variables they had the difference in the score between
+        the team, the seconds remaining in the game, time timeout remaining for
+        each team, and other variables that are not relevant for the case of basketball.
+        We will see in the subsequent section that our predictors are built in a
+        similar manner. We also decided to similarly use random forest as our
+        model to predict the Win Probability. This is because they provided
+        compelling reasons to use it, such as the easiness of interpretability,
+        and had success in making their predictions for the play-by-play data of
+        NFL games.
+
+        Estimating an NBA’s Player’s Impact on His Team’s Chances of Winning by
+        Sameer K. Deshpande and Shane Jensen: the research paper raises the concern
+        that because many models trying to predict the outcome of games do not take
+        into consideration the context in which players perform, they often result in
+        inaccurate conclusions on how teams actually win games. They propose an new win
+        probability that models also the impact each individual player on the field has
+        on the team. This was something that we were considering expanding on our baseline
+        model, but ultimately decided to pursue a different implementation. We would
+        definitely consider in the future to improve the accuracy of our model.
+
+        All Win Probability Models Are Wrong - Some Are Useful by StatsbyLopez: we
+        consulted this website to learn more about Win Probability, even though it
+        is applied to the National Football League. The study compared various different
+        models to predict the Win Probability using play-by-play data. While it
+        did not have a practical effect on our project, it made us conscious that
+        there are various ways that we can do it, with some being more accurate than others.
+      </p><br>
   </div>
   </div>
   </div>
@@ -155,9 +187,19 @@
   <div style="margin-right:45px;">
   <div class="row">
       <h2>Modeling Approach and Project Trajectory</h2><br>
-      <p style="font-size:140%"> Web scraping, EDA, Win Probability Model, and further model. Summarize changes in project
-        goals.
-      </h4><br>
+      <p style="font-size:140%"> In this section we will present our methodology for
+        scraping the necessary data, the process for EDA, the baseline model we
+        decided to use, and finally, further implementations we made to the baseline
+        model. Along the way, we will also present some of the challenges changes in
+        our strategy that we faced.
+      </p><br>
+      <p><b><u> Scraping the data </u></b></p>
+      <p style="font-size:140%"> In this section we will present our methodology for
+        scraping the necessary data, the process for EDA, the baseline model we
+        decided to use, and finally, further implementations we made to the baseline
+        model. Along the way, we will also present some of the challenges changes in
+        our strategy that we faced.
+      </p><br>
   </div>
   </div>
   </div>
