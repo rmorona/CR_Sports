@@ -471,7 +471,21 @@
   <div style="margin-right:45px;">
   <div class="row">
       <h2 color="red"> Results, Conclusions, and Future Work </h2><br>
-      <p style="font-size:140%;"> TO DO
+      <p style="font-size:140%;">
+        Combining our models produced underwhelming results. We were able to get similar results by
+        only using one season’s worth of data for one team and using many more predictors. We came to
+        the conclusion that we simply did not have enough training data for our model to make meaningful
+        assertions about a team’s win probability on a given play.
+      </p><br>
+      <p style="font-size:140%;">
+         However, the experience of creating a model with one team and one season gave us an idea for
+         future work: Since we were able to get a decent graph using only one season’s worth of data,
+         as long as it was with the same team, we think that it would be interesting to use an ensemble
+         of models for each game, with two of the models being trained only on one team’s history and the
+         third model being trained on as many NBA games as possible, given the limits of our computing
+         power. Also, for future work we would like to do a more rigorous analysis of the many predictors
+         that we were able to glean from the play-by-play data and see if any of those predictors would
+         significantly improve the accuracy of a WP model. 
       </p><br>
   </div>
   </div>
