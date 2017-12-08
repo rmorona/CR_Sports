@@ -370,9 +370,9 @@
       <img src="LittleData.png" width="600" height="300">
       </p>
       </p><br>
-
-      <p style="font-size:140%"> We thus ended up using the following predictors for the random forest
-        model: </p>
+      <p style="font-size:140%"> However, once we determined that our model needed much more training data,
+        we eliminated many of these predictors from our formatting function in order to save time. We
+        thus ended up using the following predictors for the random forest model: </p>
       <p style="font-size:100%">
         <table id="table2" width="40%">
           <tr>
@@ -391,6 +391,34 @@
             <td> total_time </td>
           </tr>
       </table>
+      </p>
+      <p style="font-size:140%">
+        One of the first challenges that we encountered when we trained the model was that the model
+        did not seem to understand that if a team was losing by a wide margin towards the end of a game,
+        that team was very likely to lose. This challenge actually revealed a flaw in our formatting,
+        because we were calculating total_time incorrectly, which prevented the model from learning
+        something so intuitive.
+      </p><br>
+      <p style="font-size:140%">
+        The other challenge that we faced was choosing hyperparameters that would not overfit the model
+        to the training data. Because of time constraints we were not able to test many combinations of
+        n_estimators and max_depth, but from those we were able to test we found the best combination to
+        be 8 n_estimators and 3 max_depth.
+      </p><br>
+      <p style="font-size:140%">
+        At first we only trained our model on one season’s worth of data, which was very problematic,
+        because it meant that the model was very overfitted to the training data. With a baseline model
+        that was only trained on one season’s worth of games we were not able to get the model’s
+        classification accuracy higher than about 0.8 and could not avoid noticeable overfitting.
+        This meant that our plots were very confusing visually, because of the outlier probabilities.
+        For this reason we created a smooth function that takes the k nearest elements of a list and
+        averages them together for every element in the list. Below it is clear that this function made
+        our graphs much more visually interpretable even when we average the probabilities from only the
+        10 nearest plays. While this function helped to make our graphs easier on the eye, it could not
+        solve our serious overfitting problem. The graph of this is shown below.
+      </p>
+      <p align='center'>
+      <img src="LittleDataSmooth.png" width="600" height="300">
       </p>
 
       <p style="font-size:140%"><b><u> Improvements on the Baseline Model </u></b></p>
