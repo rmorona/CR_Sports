@@ -1,3 +1,3 @@
-# CR_Sports
+# CS109 Basketball Project by Rosa Morona and Charles Webb
 
-# We are working on a cool project
+# Project can be found from viewing the following website: https://rmorona.github.io/CR_Sports/
