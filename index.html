@@ -231,8 +231,8 @@
       <p style="font-size:140%"> In this section we will present our methodology for
         scraping the necessary data, the process for EDA, the baseline model we
         decided to use, and finally, further implementations we made to the baseline
-        model. Along the way, we will also present some of the challenges changes in
-        our strategy that we faced.
+        model. Along the way, we will also present some of the challenges that we faced
+        in our strategy.
       </p><br>
       <p style="font-size:140%"><b><u> Scraping the data </u></b></p>
       <p style="font-size:140%">
@@ -240,7 +240,7 @@
         was initially of type string. Our first instinct was to scrape the website, access
         the data within the main table, and populate our dataframe with columns that
         uniquely represented each possible event in the game. For example, we initially
-        had columns for the offensive rebound, defensive rebounds, foul type, and so on.
+        had columns for the offensive rebounds, defensive rebounds, foul type, and so on.
         As we brainstormed more, we realized that we should structure our dataframe so that
         each row represented the context of the game, rather than just recording each event.
         For example, instead of having one column devoted to away timeouts that would only
@@ -344,8 +344,31 @@
       </p><br>
       <p style="font-size:140%"><b><u> Baseline Model </u></b></p>
       <p style="font-size:140%">
-        TO DO
+        After talking it through with our TF and trying it out on our data, we decided to use logistic
+        regression to learn from play-by-play data of each game of the NBA season and estimate Win
+        Probability (WP). We will consider the Win Probability as the likelihood that a certain team
+        will win the game based on the events up to a particular point on the game.
       </p><br>
+      <p style="font-size:140%">
+        We had initially settled on random forest for our prediction function because we were compelled
+        by the reasons presented in the Dennis Lock’s paper. Firstly, random forest is very interpretable
+        and intuitive. Secondly, it successfully deals with potentially non-linear data with predictors
+        that have unknown interactions. And finally, it handles outliers well and only continues based
+        on limited assumptions. Yet, we will later see, that this model did not fit our data.
+      </p><br>
+      <p style="font-size:140%">
+        To train the model, we used play-by-play data from all the games played in the NBA from 2009 to
+        2017 presented on the basketball-reference.com website. We scraped a total of 1217 games, and
+        trained the model on about 85% of them. We created a formatting function capable of calculating
+        shooting percentages for each team and adding up rebounds, three-pointers, timeouts remaining,
+        fouls, and determining whether the home or away team was on a streak of winning points without
+        giving any up at the time of any play. We spent a lot of time on this formatting function, because
+        we incorrectly assumed that our model’s inaccuracy could be explained by the inefficacy of our
+        predictors. The results of the model are shown below.
+      </p><br>
+      <img src="LittleData" width="600" height="500">
+      </p><br>
+
       <p style="font-size:140%"> We thus ended up using the following predictors for the random forest
         model: </p>
       <p style="font-size:100%">
