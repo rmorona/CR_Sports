@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Worker1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Code_EDA</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -8451,15 +8451,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box
+/* This file is a compatability layer.  It allows the usage of flexible box 
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this
+`Modern browsers` comments below).  Browsers that are known to implement this 
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+
+    Internet Explorer 11+ 
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11233,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for
+  /* This injects handle bars (a short, wide = symbol) for 
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11676,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-
+    
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11732,14 +11732,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  }
-  div.output_wrapper {
+  } 
+  div.output_wrapper { 
     display: block;
-    page-break-inside: avoid;
+    page-break-inside: avoid; 
   }
-  div.output {
+  div.output { 
     display: block;
-    page-break-inside: avoid;
+    page-break-inside: avoid; 
   }
 }
 </style>
@@ -11770,9 +11770,6 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration --></head>
 <body>
-  <div>
-  <p style="font-size:200%"><a href="index.html"><b> Back </b></a> </p>
-  </div>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -11809,11 +11806,12 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#function to get all game ids for one team</span>
 <span class="k">def</span> <span class="nf">year_schedule</span><span class="p">(</span><span class="n">months</span><span class="p">,</span> <span class="n">year</span><span class="p">):</span>
+    <span class="c1"># game_ids assigns number to a particular game to keep track</span>
     <span class="n">game_ids</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">months</span><span class="p">:</span>
         <span class="n">url1</span> <span class="o">=</span> <span class="s2">&quot;https://www.basketball-reference.com/leagues/NBA_&quot;</span><span class="o">+</span> <span class="n">year</span> <span class="o">+</span> <span class="s2">&quot;_games-&quot;</span>
@@ -11846,7 +11844,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">months</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;october&#39;</span><span class="p">,</span> <span class="s1">&#39;november&#39;</span><span class="p">,</span> <span class="s1">&#39;december&#39;</span><span class="p">,</span> <span class="s1">&#39;january&#39;</span><span class="p">,</span> <span class="s1">&#39;february&#39;</span><span class="p">,</span> <span class="s1">&#39;march&#39;</span><span class="p">,</span> <span class="s1">&#39;april&#39;</span><span class="p">,</span> <span class="s1">&#39;may&#39;</span><span class="p">,</span> <span class="s1">&#39;june&#39;</span><span class="p">]</span>
@@ -11859,10 +11857,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;2009&#39;</span><span class="p">,</span> <span class="s1">&#39;2010&#39;</span><span class="p">,</span> <span class="s1">&#39;2011&#39;</span><span class="p">,</span> <span class="s1">&#39;2012&#39;</span><span class="p">,</span> <span class="s1">&#39;2013&#39;</span><span class="p">,</span> <span class="s1">&#39;2016&#39;</span><span class="p">,</span> <span class="s1">&#39;2017&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># creating the month, year combination to later scrape the games</span>
+<span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;2009&#39;</span><span class="p">,</span> <span class="s1">&#39;2010&#39;</span><span class="p">,</span> <span class="s1">&#39;2011&#39;</span><span class="p">,</span> <span class="s1">&#39;2012&#39;</span><span class="p">,</span> <span class="s1">&#39;2013&#39;</span><span class="p">,</span> <span class="s1">&#39;2016&#39;</span><span class="p">,</span> <span class="s1">&#39;2017&#39;</span><span class="p">]</span>
 <span class="n">schedule</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">years</span><span class="p">:</span>
     <span class="n">schedule</span> <span class="o">=</span> <span class="n">schedule</span> <span class="o">+</span> <span class="n">year_schedule</span><span class="p">(</span><span class="n">months</span><span class="p">,</span> <span class="n">year</span><span class="p">)</span>
@@ -11914,8 +11913,50 @@ november 2012
 december 2012
 january 2012
 february 2012
+march 2012
+april 2012
+may 2012
+june 2012
+october 2013
+november 2013
+december 2013
+january 2013
+february 2013
+march 2013
+april 2013
+may 2013
+june 2013
+october 2016
+november 2016
+december 2016
+january 2016
+february 2016
+march 2016
+april 2016
+may 2016
+june 2016
+october 2017
+november 2017
+december 2017
+january 2017
+february 2017
+march 2017
+april 2017
+may 2017
+june 2017
 </pre>
 </div>
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[13]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>8951</pre>
+</div>
+
 </div>
 
 </div>
@@ -11924,10 +11965,11 @@ february 2012
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">schedule1</span> <span class="o">=</span> <span class="p">[</span><span class="n">to_pbp_url</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">schedule</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># changes the game id to a full play-by-play url</span>
+<span class="n">schedule1</span> <span class="o">=</span> <span class="p">[</span><span class="n">to_pbp_url</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">schedule</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -11937,7 +11979,7 @@ february 2012
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># populates the dataframe with data scraped</span>
@@ -11959,17 +12001,115 @@ february 2012
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>744.8523976802826
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[6]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Time</th>
+      <th>Orlando</th>
+      <th>Unnamed: 2</th>
+      <th>Score</th>
+      <th>Unnamed: 4</th>
+      <th>Detroit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12:00.0</td>
+      <td>Start of 1st quarter</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>12:00.0</td>
+      <td>Jump ball: A. Johnson vs. D. Howard (R. Wallac...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11:43.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0-0</td>
+      <td>NaN</td>
+      <td>R. Wallace misses 3-pt shot from 23 ft</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>11:42.0</td>
+      <td>Defensive rebound by H. Turkoglu</td>
+      <td>NaN</td>
+      <td>0-0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>11:31.0</td>
+      <td>Turnover by J. Nelson (bad pass; steal by A. I...</td>
+      <td>NaN</td>
+      <td>0-0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># creates test copies of the dataframes for test use below</span>
 <span class="n">test1</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dataframes1</span><span class="p">]</span>
 <span class="n">test2</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dataframes1</span><span class="p">]</span>
-<span class="n">test3</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dataframes2</span><span class="p">]</span>
-<span class="n">test4</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dataframes2</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -11979,7 +12119,7 @@ february 2012
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># turns time string into an integer measured in seconds</span>
@@ -12000,19 +12140,25 @@ february 2012
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#function to clean and format scraped data</span>
 <span class="k">def</span> <span class="nf">format_frames</span><span class="p">(</span><span class="n">pbp</span><span class="p">):</span>
+    <span class="c1"># getting information of what team is away and what team is home</span>
     <span class="n">awayteam</span> <span class="o">=</span> <span class="n">pbp</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">hometeam</span> <span class="o">=</span> <span class="n">pbp</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
     <span class="n">pbp</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="s1">&#39;awayevents&#39;</span><span class="p">,</span><span class="s1">&#39;awaypts&#39;</span><span class="p">,</span><span class="s1">&#39;score&#39;</span><span class="p">,</span><span class="s1">&#39;homepts&#39;</span><span class="p">,</span><span class="s1">&#39;homeevents&#39;</span><span class="p">]</span>
+    
+    <span class="c1"># assigning these values to column</span>
     <span class="n">pbp</span><span class="p">[</span><span class="s1">&#39;awayteam&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">awayteam</span>
     <span class="n">pbp</span><span class="p">[</span><span class="s1">&#39;hometeam&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">hometeam</span>
+    
+    <span class="c1"># merging the events to create one column with all the events of both home and away</span>
     <span class="n">events</span> <span class="o">=</span> <span class="n">pbp</span><span class="p">[</span><span class="s1">&#39;awayevents&#39;</span><span class="p">]</span>
     <span class="n">events</span> <span class="o">=</span> <span class="n">events</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">pbp</span><span class="p">[</span><span class="s1">&#39;homeevents&#39;</span><span class="p">])</span>
     <span class="n">pbp</span><span class="p">[</span><span class="s1">&#39;event&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">events</span>
+    
     <span class="c1">#possession with 1 indicating that the away team is making the play and 0 indicating the opposite</span>
     <span class="n">pbp</span><span class="p">[</span><span class="s1">&#39;possession&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">pd</span><span class="o">.</span><span class="n">isnull</span><span class="p">(</span><span class="n">pbp</span><span class="p">[</span><span class="s1">&#39;awayevents&#39;</span><span class="p">])</span>
     <span class="c1">#first need to replace scores at the beginning of games and the rows that just mark the end of quarters </span>
@@ -12053,6 +12199,8 @@ february 2012
                 <span class="n">total_time</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">total_time</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2880</span> <span class="o">-</span> <span class="p">((</span><span class="mi">5</span><span class="o">-</span><span class="n">x</span><span class="p">)</span><span class="o">*</span><span class="n">y</span><span class="p">))</span>
+    
+    <span class="c1"># creating total time column </span>
     <span class="n">pbp2</span><span class="p">[</span><span class="s2">&quot;total_time&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">total_time</span>
     <span class="n">z_count</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
     <span class="k">for</span> <span class="n">time</span> <span class="ow">in</span> <span class="n">pbp2</span><span class="p">[</span><span class="s1">&#39;total_time&#39;</span><span class="p">]:</span>
@@ -12063,7 +12211,7 @@ february 2012
     <span class="n">home_final</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">pbp2</span><span class="p">[</span><span class="s1">&#39;homescore&#39;</span><span class="p">])</span>
     <span class="k">if</span> <span class="n">away_final</span> <span class="o">&gt;</span> <span class="n">home_final</span><span class="p">:</span>
         <span class="n">pbp2</span><span class="p">[</span><span class="s1">&#39;win&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">pbp2</span><span class="p">[</span><span class="s1">&#39;possession&#39;</span><span class="p">]]</span>
-    <span class="k">else</span><span class="p">:</span>
+    <span class="k">else</span><span class="p">:</span> 
         <span class="n">pbp2</span><span class="p">[</span><span class="s1">&#39;win&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">pbp2</span><span class="p">[</span><span class="s1">&#39;possession&#39;</span><span class="p">]]</span>
     <span class="k">return</span> <span class="n">pbp2</span>
 </pre></div>
@@ -12075,10 +12223,11 @@ february 2012
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">formatted_frames</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">format_frames</span><span class="p">,</span> <span class="n">test3</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># formatting the data scraped</span>
+<span class="n">formatted_frames</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">format_frames</span><span class="p">,</span> <span class="n">test1</span><span class="p">))</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">dataframe</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">formatted_frames</span><span class="p">):</span>
     <span class="n">dataframe</span><span class="p">[</span><span class="s2">&quot;game_id&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
 <span class="n">season_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">formatted_frames</span><span class="p">,</span> <span class="n">ignore_index</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -12087,6 +12236,8 @@ february 2012
 <span class="n">season_reference</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 <span class="n">season_df</span> <span class="o">=</span> <span class="n">season_df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="s1">&#39;event&#39;</span><span class="p">,</span> <span class="s1">&#39;quarter&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">season_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+
+<span class="c1"># saving the data as a csv file</span>
 <span class="n">season_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;Rosa1_seasons.csv&quot;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span>
 <span class="n">season_reference</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;Rosa1_season_reference.csv&quot;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span>
 </pre></div>
@@ -12095,16 +12246,33 @@ february 2012
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>
-</pre></div>
+<div class="output_wrapper">
+<div class="output">
 
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Users/francabb/anaconda/lib/python3.6/site-packages/ipykernel_launcher.py:38: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+/Users/francabb/anaconda/lib/python3.6/site-packages/ipykernel_launcher.py:39: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+/Users/francabb/anaconda/lib/python3.6/site-packages/ipykernel_launcher.py:51: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+</pre>
 </div>
+</div>
+
 </div>
 </div>
 
@@ -12113,7 +12281,7 @@ february 2012
   </div>
 </body>
 
-
+ 
 
 
 </html>
