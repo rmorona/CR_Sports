@@ -305,21 +305,50 @@
             <td> game_id </td>
             <td> Assigned number to each game to keep track </td>
           </tr>
+          <tr>
+            <td> posession </td>
+            <td> Indicator variable of which team has the ball </td>
+          </tr>
         </table>
       </p>
       <br></br>
       <p style="font-size:140%"><b><u> Exploratory Data Analysis </u></b></p>
       <p style="font-size:140%">
-        TO DO
+        After populating the dataframe on our Jupyter Notebook, we decided to clean the data.
+        We eliminated the rows that had event type as NaN and also specified the type of each column.
+        Once we had formatted the dataframe for an individual game, we generalized the code we used into
+        a function. This enabled us to apply the code to multiple urls, each containing an individual game.
+        After this was completed, we downloaded the data into a csv file for future reference.
       </p><br>
       <p style="font-size:140%">
         The code we used to scrape the data from the website and to perform EDA can be found
-        by clicking <a href="Code_EDA.html">this link.</a> 
+        by clicking <a href="Code_EDA.html">this link.</a>
       </p><br>
       <p style="font-size:140%"><b><u> Baseline Model </u></b></p>
       <p style="font-size:140%">
         TO DO
       </p><br>
+      <p style="font-size:140%"> We thus ended up using the following predictors for the random forest
+        model: </p>
+      <p style="font-size:100%">
+        <table id="customers">
+          <tr>
+            <th> Variable Name </th>
+          </tr>
+          <tr>
+            <td> awayscore </td>
+          </tr>
+          <tr>
+            <td> homescore </td>
+          </tr>
+          <tr>
+            <td> posession </td>
+          </tr>
+          <tr>
+            <td> total_time </td>
+          </tr>
+
+        </p>
       <p style="font-size:140%"><b><u> Improvements on the Baseline Model </u></b></p>
       <p style="font-size:140%">
         TO DO
